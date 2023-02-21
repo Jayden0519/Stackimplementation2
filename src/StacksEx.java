@@ -18,4 +18,5 @@ public class StacksEx
         System.out.println(videoGames.peek());
         System.out.println(videoGames.size());
     }
+
 }
