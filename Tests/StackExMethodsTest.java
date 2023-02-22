@@ -2,17 +2,33 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StackExMethodsTest {
+class StackExMethodsTest
+{
+    @Test
+    public void testIsEmptyTrue()
+    {
+        System.out.println("isEmpty");
+        assertTrue( instance.isEmpty() );
+    }
 
     @Test
-    void testEmpty()
+    public void testIsEmptyFalse()
     {
-            StackExTest videoGames = new StackExTest();
-            videoGames.getNum();
-            assertTrue(videoGames.getNum().matches("please try again"));
+        System.out.println("isEmpty");
+        instance.push( 1 );
+        assertFalse( instance.isEmpty() );
+    }
 
+    @Test
+    public void testPopEx()
+    {
+        System.out.println("pop");
+        exeception.except( IndexOutOfBoundsException.class );
+        Integer peek = instance.pop();
     }
 
 
 
-    }
+
+
+}
