@@ -8,7 +8,7 @@ class StackExMethodsTest
     public void testIsEmptyTrue()
     {
         System.out.println("isEmpty");
-        assertTrue( instance.isEmpty() );
+        assertTrue(instance.isEmpty();
     }
 
     @Test
@@ -16,16 +16,25 @@ class StackExMethodsTest
     {
         System.out.println("isEmpty");
         instance.push( 1 );
-        assertFalse( instance.isEmpty() );
+        assertFalse(instance.isEmpty());
     }
 
     @Test
     public void testPopEx()
     {
         System.out.println("pop");
-        exeception.except( IndexOutOfBoundsException.class );
+        exeception.except( IndexOutOfBoundsException.class);
         Integer peek = instance.pop();
     }
+
+    @Test
+    public void testPush()
+    {
+        System.out.println("push");
+        instance.push(-22);
+        assertEquals(instance.peek(), new Integer(-22));
+    }
+
 
 
 
