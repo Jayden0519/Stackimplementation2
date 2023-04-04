@@ -11,7 +11,7 @@ public class Main
 
         System.out.println("stack is full " + stack.isFull());
 
-        try {
+        try {  //finally learned how to use a try loop in the case that something is thrown an exception in this case my StacksEx
             stack.push(60); // This will throw an exception because the stack is full
         } catch (IllegalStateException j) {
             System.out.println("cant push element onto stack: " + j.getMessage());
@@ -19,7 +19,7 @@ public class Main
 
         System.out.println("top element : " + stack.peek());
 
-        while (!stack.isEmpty()) {
+        while (!stack.isEmpty()) { //remember when I said I hated while loops freshman year well here wwe are
             int element = stack.pop();
             System.out.println("popped element : " + element);
         }
