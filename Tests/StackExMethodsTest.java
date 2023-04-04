@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.
 
 class StackExMethodsTest
 {
@@ -16,7 +17,7 @@ class StackExMethodsTest
     {
         System.out.println("isEmpty");
         instance.push( 1 );
-        assertFalse( instance.isEmpty() );
+        assertFalse(instance.isEmpty() );
     }
 
     @Test
